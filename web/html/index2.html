@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://kit.fontawesome.com/591fd64fd5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+</head>
+<body>
+        
+    <div class="main-container">
+        <!-- NAVIGATION -->
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-plane" aria-hidden="true"></i></span>
+                        <span class="title">Erangel</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-plane" aria-hidden="true"></i></span>
+                        <span class="title">Mirama</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-plane" aria-hidden="true"></i></span>
+                        <span class="title">Sanhok</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-plane" aria-hidden="true"></i></span>
+                        <span class="title">Vikendi</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-plane" aria-hidden="true"></i></span>
+                        <span class="title">Karakin</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- CONTENT -->
+        <main class="content">
+            <div class="content-container">
+
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+                <div class="five"></div>
+                <div class="six"></div>
+
+            </div>
+        </main>
+
+    </div>
+
+    <!-- TOGGLE -->
+    <div class="toggle" onclick="toggleMenu()"></div>
+    <script type="text/javascript">
+        function toggleMenu() {
+            let navigation = document.querySelector('.navigation');
+            let toggle = document.querySelector('.toggle');
+            navigation.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+    </script>
+
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="https://kit.fontawesome.com/591fd64fd5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    
+
+</head>
+<body>
+        
+    <div class="main-container">
+        <!-- NAVIGATION -->
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="index2.html" >
+                        <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-plane" aria-hidden="true"></i></span>
+                        <span class="title">Erangel</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-plane" aria-hidden="true"></i></span>
+                        <span class="title">Mirama</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-plane" aria-hidden="true"></i></span>
+                        <span class="title">Sanhok</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-plane" aria-hidden="true"></i></span>
+                        <span class="title">Vikendi</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-plane" aria-hidden="true"></i></span>
+                        <span class="title">Karakin</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- CONTENT -->
+        <main class="content">
+            <div class="content-container">
+
+                <div class="one">
+                    <canvas id="chart" width="300px" height="100px"></canvas>
+
+                    <script>
+                        d3.csv('Rifle.csv').then(makeChart);
+
+                        function makeChart(players) {
+                            var a = players.map(function(d) {return d.WeaponName});
+                            var weeksData = players.map(function(d) {return d.Damage});
+                        
+                            var chart = new Chart('chart', {
+                            type: 'radar',
+                            data: {
+                                labels: a,
+                                datasets: [
+                                {
+                                    data: weeksData
+                                }
+                                ]
+                            }
+                            });
+                        }
+                    </script>
+                </div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+                <div class="five"></div>
+                <div class="six"></div>
+
+            </div>
+        </main>
+
+    </div>
+
+    <!-- TOGGLE -->
+    <div class="toggle" onclick="toggleMenu()"></div>
+    <script type="text/javascript">
+        function toggleMenu() {
+            let navigation = document.querySelector('.navigation');
+            let toggle = document.querySelector('.toggle');
+            navigation.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+    </script>
+
+    </div>
+
+
+</body>
+</html>
