@@ -1,0 +1,6 @@
+,WeaponName,Groza,AKM,M249,DP_28,AUG,SCAR_L,M416,M16A4,G36C,OBZ
+0,Damage,9,9,6,9,3,3,3,3,3,3
+1,Range,3,3,3,6,9,9,9,9,9,9
+2,RateOfFire,6,3,9,3,9,12,12,3,9,12
+3,DamagePerSecond,14,8,12,8,10,4,4,2,10,6
+4,BDMG_0,8,8,6,10,2,2,2,4,2,2

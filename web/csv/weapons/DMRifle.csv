@@ -1,0 +1,6 @@
+,WeaponName,Mk14,SLR,SKS,QBU,Mini14,VSS
+21,Damage,18,15,12,9,6,3
+22,Range,9,9,9,9,6,3
+23,RateOfFire,6,3,3,3,3,3
+24,DamagePerSecond,12,10,8,6,2,4
+25,BDMG_0,12,10,8,6,4,2

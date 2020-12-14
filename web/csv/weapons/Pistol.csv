@@ -1,0 +1,6 @@
+,WeaponName,Sawed-Off,R1895,R45,P1911,P92,P18C,Skorpion
+31,Damage,18,15,15,12,9,6,3
+32,Range,3,3,3,3,3,3,6
+33,RateOfFire,15,18,15,9,12,3,6
+34,DamagePerSecond,14,2,4,10,6,12,8
+35,BDMG_0,10,8,8,6,4,2,2

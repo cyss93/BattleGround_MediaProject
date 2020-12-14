@@ -1,0 +1,6 @@
+,WeaponName,Vector,MicroUZI,PP-Bizon,MP5K,Thompson,UMP9
+12,Damage,6,3,12,9,18,15
+13,Range,3,6,9,6,6,9
+14,RateOfFire,6,3,12,9,15,18
+15,DamagePerSecond,12,10,2,8,6,4
+16,BDMG_0,4,2,8,6,12,10

@@ -46,22 +46,22 @@ let txt = document.querySelector(".hitMaptext");
 function clickButton() {
 
   longKiller.addEventListener('click', function() {
-    hitMap.setAttribute("src", "/img/map_image/erangel_long_killer.png");
+    hitMap.setAttribute("src", "/img/map_image/miramar_long_killer.png");
     txt.innerText = "Top 20% sniper position distribution";
   })
 
   longVictim.addEventListener('click', function() {
-    hitMap.setAttribute("src", "/img/map_image/erangel_long_victim.png");
+    hitMap.setAttribute("src", "/img/map_image/miramar_long_victim.png");
     txt.innerText = "The top 20% dead players's distribution by sniper";
   })
 
   topKiller.addEventListener('click', function() {
-    hitMap.setAttribute("src", "/img/map_image/erangel_top_killer.png");
+    hitMap.setAttribute("src", "/img/map_image/miramar_top_killer.png");
     txt.innerText = "Kill location distribution of killers within the top 10";
   })
 
   totalVictim.addEventListener('click', function() {
-    hitMap.setAttribute("src", "/img/map_image/erangel_total_victim_position.png");
+    hitMap.setAttribute("src", "/img/map_image/miramar_total_victim_position.png");
     txt.innerText = "Death Location for All Players";
   })
 }
